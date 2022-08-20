@@ -1,0 +1,647 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+</html>
+
+<style>
+	#banner p {
+		color: goldenrod;
+		font-weight: bold;
+		/*background:  linear-gradient(rgba(126, 121, 121, 0.7), rgba(126,121,121,0.7));*/
+		background: cover;
+		background-size: auto;
+	}
+
+	#cta h2 {
+		color: goldenrod;
+	}
+
+	#two h2 {
+		color: goldenrod;
+	}
+
+	#banner {
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+			url('attoplandingimage.png');
+		height: auto;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		display: flex;
+	}
+	#one{
+	background-image:
+			linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+			url('web-design-2906159_960_720.png');
+		height: auto;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		display: flex;
+	}
+
+	#footer {
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+			url('page-header.gif');
+		height: auto;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+
+	/*CSS FOR SLIDE BARS SKILLS*/
+	#mainbody {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		/*background: #07182d;*/
+		background-attachment: fixed;
+		overflow: hidden;
+		overflow-x: hidden;
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+			url('flying-devices-booking-room-responsive-website-flying-devices-booking-room-website-responsive-design-d-rendering-112103887.jpg');
+	}
+
+	.container {
+		position: relative;
+		width: 800px;
+		padding: 20px;
+
+
+	}
+
+	.container h2 {
+		color: goldenrod;
+	}
+
+	.container .skills {
+		position: relative;
+		display: flex;
+		margin: 4px 0;
+		padding: 20px 10px 18px;
+		/*  background: linear-gradient(#616161 0%, #333 10%, #222);*/
+		border-radius: 8px;
+		overflow: hidden;
+		/*  border: 2px solid #000;*/
+		transition: 0.5s;
+		height: 10%;
+	}
+
+	.container .skills:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		/* background: rgba(255,255, 255,.1);*/
+		z-index: 10;
+	}
+
+	.container .skills .Name {
+		position: relative;
+		width: 125px;
+		/*EARLIER IT WAS 110*/
+		text-align: right;
+		color: #fff;
+		margin-top: -2px;
+		text-transform: uppercase;
+	}
+
+	.container .skills .value {
+		position: relative;
+		width: 40px;
+		text-align: left;
+		color: #fff;
+		margin-top: -2px;
+		text-transform: uppercase;
+	}
+
+	.container .skills .percent {
+		position: relative;
+		width: calc(100% - 150px);
+		height: 20px;
+		margin: 0 10px;
+		border-radius: 10px;
+		background: #151515;
+		box-shadow: inset 0 0 10px #000;
+		overflow: hidden;
+	}
+
+	.container .skills .percent .progress {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 70%;
+		height: 100%;
+		border-radius: 10PX;
+		background: #fff;
+		box-shadow: inset 0 0 2px #000;
+		animation: animate 4s ease-in-out forwards;
+	}
+
+	@keyframes animate {
+		from {
+			width: 0;
+		}
+	}
+
+	.container .skills:nth-child(2) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.container .skills:nth-child(3) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.container .skills:nth-child(4) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.container .skills:nth-child(5) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.container .skills:nth-child(6) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.container .skills:nth-child(7) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.container .skills:nth-child(8) .percent .progress {
+		background: linear-gradient(45deg, #8ddced, #0895fa);
+	}
+
+	.png {
+		width: 10%;
+		height: auto;
+		margin-top: -20px;
+	}
+
+	.png1 {
+		width: 5%;
+		height: auto;
+		margin-top: -20px;
+	}
+
+	/*CSS FOR PROJEST ICON*/
+	.Projects {
+		width: 6vh;
+		margin-left: -5px;
+		margin-bottom: -15px;
+	}
+
+	.Projects1 {
+		/*font-size: 0.8em;*/
+		line-height: 0.5em;
+		margin-left: 8px;
+	}
+
+
+	/*MEDIA QUERIES FOR LANDING PAGE*/
+	@media only screen and (max-width: 600px) {
+		#banner {
+			background-image:
+				linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+				url('newimage.jpg');
+			height: auto;
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			display: flex;
+		}
+	}
+
+	/*PROJECTS IMAGES*/
+	.projectimg {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		box-shadow: 2px 2px 4px black;
+	}
+
+	.signature {
+		font-family: Brush Script MT, Brush Script Std, cursive;
+		/*font-family: cursive;*/
+		text-align: right;
+		color: goldenrod;
+		font-size: 30px;
+	}
+
+	.uppercase::first-letter {
+		font-size: 180%;
+		/*color: #8A2BE2;*/
+	}
+
+
+
+	html {
+		scroll-behavior: smooth;
+	}
+</style>
+
+<head>
+	<title>Gaurav Indulkar(Website)</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<meta name="keywords" content="Gaurav">
+	<meta name="description" content="Gaurav Uday Indulkar">
+</head>
+
+<body class="landing is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Gaurav U. Indulkar</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
+							<ul>
+								<li><a href="#banner"><b>Home</b></a></li>
+								<li><a href="#two"><b>About</b></a></li>
+								<li><a href="#four"><b>Skills</b></a></li>
+								<li><a href="#three"><b>Projects</b></a></li>
+								<!--<li><a href="C:\Users\K12\Desktop\responsive web design\elements.html">Know more</a></li>-->
+								<li><a href="generic.html"><b>Contact &
+											More</b></a></li>
+								<!--<li><a href="#">Log In</a></li>-->
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+
+		<section id="banner">
+
+			<div class="inner">
+				<p style="text-shadow: 2px 2px 5px black;">Hello<br />My Self</p>
+				<h2>Gaurav Uday Indulkar</h2>
+				<p style="text-shadow: 2px 2px 5px black;">Front-End WebDeveloper<br />
+					"The Digital design is like penting, except the paint that never
+					dries."<br />
+					<!-- <img src="C:\Users\K12\Desktop\responsive web design\gauravimage.png">-->
+					<!--crafted by 
+							<a href="http://html5up.net">HTML5 UP</a>.</p> -->
+				<ul class="actions special">
+					<li><a href="#one" class="button primary">Activate</a></li>
+				</ul>
+				<!--	<img src="C:\Users\K12\Desktop\responsive web design\gauravimage.png">-->
+			</div>
+			<a href="#one" class="more scrolly">Learn More</a>
+
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style1 special">
+
+			<div class="inner">
+				<header class="major">
+					<h2 data-aos="zoom-in">A Creative Front-End Developer <br />
+						Mr. gaurav uday Indulkar</h2>
+					<p data-aos="zoom-in-up" class="uppercase"><b>A Creative Front-end Developer from Mumbai. Having 2+ Years of experience as a
+						Front-End
+						Developer (Freelancer) & Product Developer at K12 Techno Services PVT. LTD. (Full time).<br />
+						A boy Who likes to learn the latest technologies & has an interest in programming.
+						Expert In building Attractive, Userfriendly & Responsive User Interfaces
+						Using Front-end technologies. To Meet your Business process & requirements...
+						<br />
+						A Self-motivated and hard-working boy who has a keen interest in
+						(Coding and Learning new technologies).
+						<br><br>
+						“A successful website does three things:
+						It attracts the right kinds of visitors.
+						Guides them to the main services or products you offer.
+						Collect Contact details for future ongoing relations.”
+					</b></p>
+					
+				</header>
+				<ul class="icons major">
+					<!--	<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>-->
+					<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper alt style2">
+			<section class="spotlight">
+				<div data-aos="fade-up" class="image">
+					<img src="tobeused.png" alt="" /></div>
+				<div class="content">
+					<h2 data-aos="fade-left">About Me,<br />
+						And my creative skills</h2>
+					<p>Deep learning, Computer Vision, and recommendation systems and use
+						the same to bring out insight from raw data. I Love to network and
+						meet new people. I have a passion for codding, Developing Attractive & User-friendly Websites.
+						Strong Understanding of Computer Applications and Computer Systems...
+						<li>Having 2+ years of experience as a Front-End Developer (Freelancer) & Product
+							Developer at K12 Techno Services PVT. LTD. Mumbai (Fulltime)</li>
+					</p>
+					<li>Great Understanding of Customer requirnments.</li>
+					<li>Developing attractive and Userfriendly Products.</li>
+					<li>Provide Cost effective and timely Deliver Solutions.</li>
+					<li>Provide Websites redesign services and many more...</li>
+					</p>
+					<p class="signature"><u>Gaurav U. Indulkar.</u></p>
+				</div>
+			</section>
+			<section class="spotlight">
+			<!--	<div data-aos="fade-up" class="image"><img
+						src="C:\Users\K12\Desktop\responsive web design\skillsimg.png" alt="" /></div>-->
+						<div data-aos="fade-up" class="image"><img
+							src="software-developer-6521720__480.jpg" alt="" /></div>
+
+				<div class="content">
+					<h2 data-aos="fade-right">Skills,<br />
+						Technologies I Use</h2>
+					<li>Operating System (Windows 7, 10 & Linux)</li>
+					<li>Technologies (HTML5, CSS3, Tailwind CSS, javascript, Bootstrap, php, jquery, FTP, etc..)</li>
+					<li>E-Learning (Articulate storyline 360, Rise 360)</li>
+					<li>Designing (Web Animation, Adobe PS)</li>
+					<li>Database (Mysql, xampp)</li>
+					Strong Understanding of Websites UI Design and implemintation Experience.
+					Along with Backend. Having Very good knowledge of Computer Applications & Computer Systems.</p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div data-aos="fade-up" class="image"><img
+						src="C:\Users\K12\Desktop\responsive web design\austin-poon-JO_S6ewBqAk-unsplash.jpg" alt="" />
+				</div>
+				<div class="content">
+					<h2 data-aos="fade-left">Services,<br />
+						Expert In</h2>
+
+					<li>
+						Website Repairs & Maintenance
+					</li>
+					<li>
+						Web Hosting
+					</li>
+					<li>
+						Responsive Website Design & Development
+					</li>
+					<li>
+						E-commerce Website Design & Development
+					</li>
+					<li>
+						Static/Dynamic Website Design & Development
+					</li>
+					<li>
+						Professional Website Design & Development
+					</li>
+					<li>
+						Website Redesign Services
+					</li>
+					<li>
+						HTML/CSS Development and more....
+					</li>
+
+
+				</div>
+			</section>
+		</section>
+
+
+		<section id="four">
+			<div id="mainbody">
+				<div class="container" id="mySkills">
+
+					<h2 data-aos="zoom-out-left">Technical Skills</h2>
+					<!--HTML5-->
+					<div class="skills">
+						<img class="png" src="icons8-html-5-48.png">
+						<span class="Name">Html5</span>
+						<!--<img class="png" src="html.png">-->
+						<div class="percent">
+							<div data-aos="fade-right" class="progress" style="width: 95%;"></div>
+						</div>
+						<span class="value">95%</span>
+					</div>
+					<!--CSS3-->
+					<div class="skills">
+						<img class="png" src="icons8-css3-48.png">
+						<span class="Name">Css3</span>
+						<div class="percent">
+							<div data-aos="fade-right" class="progress" style="width: 85%;"></div>
+						</div>
+						<span class="value">85%</span>
+					</div>
+					<!--JAVASCRIPT-->
+
+					<div class="skills">
+						<img class="png" src="icons8-javascript-48.png">
+						<span class="Name">Javascript</span>
+						<div class="percent">
+							<div data-aos="fade-right" class="progress" style="width: 55%;"></div>
+						</div>
+						<span class="value">55%</span>
+					</div>
+
+					<!--BOOTSTRAP-->
+					<div class="skills">
+						<img class="png" src="icons8-bootstrap-48.png">
+						<span class="Name">Bootstrap</span>
+						<div class="percent">
+							<div data-aos="fade-right"  class="progress" style="width: 75%;"></div>
+						</div>
+						<span class="value">75%</span>
+					</div>
+					<!--PHOTOSHOP-->
+					<div class="skills">
+						<img class="png"
+							src="icons8-adobe-photoshop-48.png">
+						<span class="Name">photoshop</span>
+						<div class="percent">
+							<div data-aos="fade-right" class="progress" style="width: 30%;"></div>
+						</div>
+						<span class="value">30%</span>
+					</div>
+					<!--PHP-->
+					<div class="skills">
+						<img class="png" src="icons8-php-48.png">
+						<span class="Name">php</span>
+						<div class="percent">
+							<div data-aos="fade-right"  class="progress" style="width: 50%;"></div>
+						</div>
+						<span class="value">50%</span>
+					</div>
+					<!--	SQL		-->
+					<div class="skills">
+						<img class="png" src="icons8-mysql-logo-48.png">
+						<span class="Name">MySql</span>
+						<div class="percent">
+							<div data-aos="fade-right" class="progress" style="width: 50%;"></div>
+						</div>
+						<span class="value">50%</span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+		<!-- Three PROJECT SECTION -->
+		<section id="three" class="wrapper style3 special">
+			<div class="inner">
+				<header class="major">
+					<img class="Projects" src="icons8-creative-48.png">
+					<h2 class="Projects1">Projects</h2>
+					<p>Every project is an opportunity to learn, to figure out problems and challenges, to invent and
+						reinvent.</p>
+				</header>
+				<ul class="features">
+					<li data-aos="zoom-in" class="icon fa-paper-plane">
+						<h3>luxury Hotel</h3>
+						<p>luxury Hotel. From where you can book your Beautiful Hotel <br />Technologies Used : HTML5, CSS3,
+							JS, Tailwindcss,Web Animations, Adobe Ps, Css animation, etc...</p>
+						<ul class="actions special">
+							<li><a href="https://gauravindulkar.github.io/bookinghotel/" class="button primary">Visit</a></li>
+						</ul>
+					</li>
+
+					<li data-aos="zoom-in" class="icon solid fa-laptop">
+						<h3>Biker Zone</h3>
+						<p>Biker Zone from where you can buy your dream bike <br />Technologies Used : HTML5, CSS3, JS,
+							Bootstrap, Css animation, etc...</p>
+						<ul class="actions special">
+							<li><a href="https://thebikerszone.000webhostapp.com/"
+									class="button primary">Visit</a></li>
+						</ul>
+					</li>
+					<li data-aos="zoom-in" class="icon solid fa-code">
+						<h3>Analog Clock</h3>
+						<p>Analog Clock. <br />Technologies Used : HTML5, CSS3,
+							Javascript,Bootstrap, Adobe Ps.</p>
+						<ul class="actions special">
+							<li><a href="https://analogworkingclock.000webhostapp.com/"
+									class="button primary">Visit</a></li>
+						</ul>
+					</li>
+
+					<li data-aos="zoom-in" class="icon solid fa-headphones-alt">
+						<h3>Fitness Hub</h3>
+						<p>Fitness Hub. From where you can book your Membership <br />Technologies Used : HTML5, CSS3,
+							JS, Bootstrap, Css animation, Git & Github, etc...</p>
+						<ul class="actions special">
+							<li><a href="https://gaurav-uday-indulkar.github.io/gym-managment.github.io/"
+									class="button primary">Visit</a></li>
+						</ul>
+					</li>
+					<li data-aos="zoom-in" class="icon fa-heart">
+						<h3>Calculator</h3>
+						<p>Calculator. You can perform mathematical calculations <br />Technologies Used : HTML5, CSS3,
+							Javascript, Bootstrap...</p>
+						<ul class="actions special">
+							<li><a href="https://calculatorgaurav.000webhostapp.com/"
+									class="button primary">Visit</a></li>
+						</ul>
+					</li>
+					<li data-aos="zoom-in" class="icon fa-flag">
+						<h3>Car Booking</h3>
+						<p>Up Comming. You can book a luxury car. <br />Technologies Used : HTML5, CSS3,
+							JS, Tailwindcss,Web Animations, Adobe Ps, Css animation, etc....</p>
+						<ul class="actions special">
+							<li><a href="https://gauravindulkar.github.io/Comming-soon/"
+									class="button primary">Visit</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section id="cta" class="wrapper style4">
+			<div class="inner">
+				<header>
+					<h2 class="uppercase1">Gaurav Uday Indulkar</h2>
+					<!--<p>Please click on the click more button to Know more about me and my skills.</p>-->
+					<p>To Know more about me and my Creative Skills Download my CV.</p>
+				</header>
+				<ul class="actions stacked">
+					<li><a href="generic.html"
+							class="button fit primary">Contact</a></li>
+					<li><a onclick="myFunction()" href="#" class="button fit">Download CV</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/gaurav.indulkar.96" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/gauravindulkar0/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Gaurav Uday Indulkar 25/07/2022</li>
+				<li>Design and Created by: <a href="#">Gaurav U. Indulkar</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script>//JAVASCRIPT FOR CONTACT FORM BACKEND (FORM-SPRAY)
+		document.querySelector('#contact-form').addEventListener('submit', (e) => {
+			e.preventDefault();
+			e.target.elements.name.value = '';
+			e.target.elements.email.value = '';
+			e.target.elements.message.value = '';
+		});
+	</script>
+
+	<script>//JAVASCRIPT FOR ANIMATION
+		AOS.init({
+			offset: 300,
+			duration: 1200,
+		});
+	</script>
+
+
+	<script>//JAVASCRIPT FOR BUTTON ALERT MESSAGE
+		function myFunction() {
+			alert("Sorry for the inconvenience Owner of this website has not provided a CV yet!");
+		}
+	</script>
+	<script src="app.js"></script>
+</body>
+
+</html>
